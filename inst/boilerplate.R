@@ -15,6 +15,9 @@ library(tsbox)
 
 # fetch current collection to get all ts keys
 keys <- read_dataset_keys("ch.fso.bapau")
+length(keys)
+
+
 
 # fetch full vintage history for all keys
 all_vintages <- read_ts_history(keys)
@@ -75,3 +78,4 @@ check()
 install()
 
 
+devtools::build_readme()
